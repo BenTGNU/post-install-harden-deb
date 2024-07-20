@@ -1,0 +1,4 @@
+quiet loglevel=3 vga=current rd.systemd.show_status=auto rd.udev.log-priority=3 vt.global_cursor_default=0 splash slab_nomerge slub_debug=FZ init_on_alloc=1 init_on_free=1 page_alloc.shuffle=1 pti=on vsyscall=none debugfs=off module.sig_enforce=1 lockdown=confidentiality mce=0 random.trust_cpu=off
+acpi_osi=Linux acpi=force acpi_enforce_resources=lax security=selinux zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=20 zswap.zpool=z3fold
+
+

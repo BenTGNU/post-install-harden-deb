@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/opt/emailnotify.sh &
+
+exit 0
