@@ -92,11 +92,6 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
-# Source all .bashrc files
-for file in ~/.bashrc.d/*.bashrc; do
-        . "$file"
-done
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -117,3 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Source all .bashrc files
+for file in ~/.bashrc.d/*.bashrc; do
+        . "$file"
+done

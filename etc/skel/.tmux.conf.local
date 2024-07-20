@@ -317,6 +317,7 @@ tmux_conf_copy_to_os_clipboard=false
 
 # -- user customizations -------------------------------------------------------
 # this is the place to override or undo settings
+set -g default-command /bin/bash
 
 # increase history size
 #set -g history-limit 10000
@@ -342,11 +343,11 @@ bind C-a send-prefix
 # Session
 new -s Remote -n Shell 'tty-clock -cC2'
 splitw -h -p 65 -t 1 bash
-splitw -v -p 40 -t 1 'journalctl --follow --merge --full | ccze'
+splitw -v -p 40 -t 1 'journalctl --follow --full | ccze'
 neww -n Monitor 'htop -d 50'
-#neww -n Commander ranger
+#neww -n Commander mc
 #neww -n System_Mail mutt
-#neww -n Logs 'sudo journalctl --follow --merge --full | lnav'
+#neww -n Logs 'sudo journalctl --follow --full | lnav'
 
 # -- custom variables ----------------------------------------------------------
 # to define a custom #{foo} variable, define a POSIX shell function between the
